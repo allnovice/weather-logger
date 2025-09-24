@@ -1,0 +1,16 @@
+name: Weather Logger
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'  # every 3 hours
+  workflow_dispatch:  # allows manual run
+
+jobs:
+  fetch-weather:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Fetch weather (placeholder)
+        run: echo "Fetching weather..."
