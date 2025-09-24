@@ -27,3 +27,4 @@ jobs:
           psql "${{ secrets.NEON_CONN }}" \
             -c "INSERT INTO weather_logs (timestamp_utc, timestamp_local, temperature_c, humidity_percent, condition) \
                  VALUES (NOW() AT TIME ZONE 'UTC', NOW(), $TEMP, $HUMIDITY, '$CONDITION');"
+                 
