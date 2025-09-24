@@ -14,11 +14,8 @@ jobs:
 
       - name: Fetch weather from OpenWeather
         run: |
-          sudo apt-get update
-          sudo apt-get install -y jq
           RESPONSE=$(curl -s "https://api.openweathermap.org/data/2.5/weather?q=Manila&units=metric&appid=${{ secrets.OPENWEATHER_API_KEY }}")
           TEMP=$(echo $RESPONSE | jq '.main.temp')
           HUMIDITY=$(echo $RESPONSE | jq '.main.humidity')
           CONDITION=$(echo $RESPONSE | jq -r '.weather[0].description')
           echo "Temperature: $TEMP°C, Humidity: $HUMIDITY%, Condition: $CONDITION"
-
