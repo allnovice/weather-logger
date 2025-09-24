@@ -21,10 +21,12 @@ jobs:
           echo "Temperature: $TEMP°C, Humidity: $HUMIDITY%, Condition: $CONDITION"
 
       - name: Insert weather into Neon
+        env:
+          NEON_CONN: ${{ secrets.NEON_CONN }}
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq postgresql-client
-          psql "${{ secrets.NEON_CONN }}" \
-            -c "INSERT INTO weather_logs (timestamp_utc, timestamp_local, temperature_c, humidity_percent, condition) \
-                 VALUES (NOW() AT TIME ZONE 'UTC', NOW(), $TEMP, $HUMIDITY, '$CONDITION');"
+          psql "$NEON_CONN" -c \
+            "INSERT INTO weather_logs (timestamp_utc, timestamp_local, temperature_c, humidity_percent, condition) \
+             VALUES (NOW() AT TIME ZONE 'UTC', NOW(), $TEMP, $HUMIDITY, '$CONDITION');"
                  
