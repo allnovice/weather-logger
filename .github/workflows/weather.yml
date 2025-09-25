@@ -3,7 +3,7 @@ name: Weather Logger
 on:
   workflow_dispatch:    # allow manual run
   schedule:
-    - cron: "0 */3 * * *"   # run every 3 hours
+    - cron: "0 16/3 * * *"   # run every 3 hours, aligned to Manila (UTC+8)
 
 jobs:
   log-weather:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Fetch weather from OpenWeather
+      - name: Fetch weather from OpenWeather (Manila only)
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq jq
@@ -30,4 +30,4 @@ jobs:
           sudo apt-get install -y -qq postgresql-client
           psql "$NEON_CONN" -c \
             "INSERT INTO weather_logs (timestamp_utc, timestamp_local, temperature_c, humidity_percent, condition) \
-             VALUES (NOW() AT TIME ZONE 'UTC', NOW(), $TEMP, $HUMIDITY, '$CONDITION');"
+             VALUES (NOW() AT TIME ZONE 'UTC', (NOW() AT TIME ZONE 'UTC') AT TIME ZONE 'Asia/Manila', $TEMP, $HUMIDITY, '$CONDITION');"
