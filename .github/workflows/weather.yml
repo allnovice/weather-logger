@@ -2,7 +2,7 @@ name: Weather Logger
 
 on:
   schedule:
-    - cron: "* * * * *"   # run every hour, aligned to Manila (UTC+8)
+    - cron: "0 * * * *"   # run every hour, aligned to Manila (UTC+8)
   workflow_dispatch:    # allow manual run
 
 jobs:
