@@ -1,9 +1,9 @@
 name: Weather Logger
 
 on:
-  workflow_dispatch:    # allow manual run
   schedule:
     - cron: "0 * * * *"   # run every 3 hours, aligned to Manila (UTC+8)
+  workflow_dispatch:    # allow manual run
 
 jobs:
   log-weather:
