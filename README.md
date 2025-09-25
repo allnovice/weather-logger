@@ -4,7 +4,7 @@
 ![Repo Size](https://img.shields.io/github/repo-size/allnovice/weather-logger)
 ![License](https://img.shields.io/github/license/allnovice/weather-logger)
 
-(https://img.shields.io/badge/Dashboard-Streamlit-blue?logo=streamlit)](https://your-app-name.streamlit.app)
+[![View Dashboard](https://img.shields.io/badge/Dashboard-Streamlit-blue?logo=streamlit)](https://your-app-name.streamlit.app)
 
 1. Project Overview
 A short description of what your logger does (e.g., “Fetches Manila weather data every hour and stores it into a Neon DB.”).
