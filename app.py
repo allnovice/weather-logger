@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import psycopg2
+import os
 
 st.title("🌦 Manila Weather Logger")
 
