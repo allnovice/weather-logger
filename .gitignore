@@ -1,0 +1,36 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+.env/
+.env.bak/
+.venv/
+
+# Byte-compiled / cache
+*.log
+*.sqlite3
+*.db
+*.DS_Store
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+.streamlit/config.toml
+# (keep the folder itself if you have custom layout/config)
+
+# --- VS Code ---
+.vscode/
+*.code-workspace
+
+# --- OS ---
+Thumbs.db
+.DS_Store
+
+# --- Others ---
+*.bak
+*.swp
+*.tmp
