@@ -55,3 +55,4 @@ Add weather forecast
 Grafana dashboard
 
 Export to CSV
+- Test auto release
