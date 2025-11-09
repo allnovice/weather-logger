@@ -24,7 +24,7 @@ jobs:
         run: npm ci
 
       - name: 🪄 Generate changelog
-        run: npx git-changelog -o CHANGELOG.md
+        run: npx conventional-changelog -p angular -i CHANGELOG.md -s
 
       - name: 💾 Commit changelog
         run: |
