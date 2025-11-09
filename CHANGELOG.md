@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/allnovice/weather-logger/compare/v1.0.0...v1.0.1) (2025-11-09)
+
+
+### Performance Improvements
+
+* upd8d readmi ([4ddc898](https://github.com/allnovice/weather-logger/commit/4ddc8983e5b584269d7b4fd99997b403fc11e891))
+
 # 1.0.0 (2025-11-09)
 
 
