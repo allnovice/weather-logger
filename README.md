@@ -64,18 +64,9 @@ SELECT * FROM weather_logs ORDER BY timestamp_local DESC LIMIT 10;
 
 ---
 
-### 🧾 Dynamic Changelog Preview
-🪄 *Auto-generated from latest GitHub Releases*  
-| Version | Date | Summary |
-|----------|------|----------|
-| [![Latest](https://img.shields.io/github/v/release/allnovice/weather-logger?label=latest)](https://github.com/allnovice/weather-logger/releases/latest) | — | Latest semantic release |
-| [Previous Releases →](https://github.com/allnovice/weather-logger/releases) |  |  |
+### 🧾 Changelog Preview
+🪄 *Auto-generated from latest GitHub Releases*
 
----
+[![Latest Release](https://img.shields.io/github/v/release/allnovice/weather-logger?label=latest)](https://github.com/allnovice/weather-logger/releases/latest)
 
-### 📦 Releases
-👉 [**Latest Release**](https://github.com/allnovice/weather-logger/releases/latest)
-
----
-
-💡 *Maintained with ❤️ by [allnovice](https://github.com/allnovice)*
+See the full changelog here: [CHANGELOG.md](CHANGELOG.md)
