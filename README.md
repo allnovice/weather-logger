@@ -56,3 +56,4 @@ Grafana dashboard
 
 Export to CSV
 - Test auto release
+- Test auto release
