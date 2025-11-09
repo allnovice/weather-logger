@@ -1,15 +1,16 @@
 {
-  "name": "my-awesome-app",
+  "name": "weather-logger",
   "version": "0.0.0",
-  "description": "Test repo for auto changelog",
-  "main": "index.js",
+  "description": "Auto changelog test",
   "scripts": {
-    "start": "node index.js"
+    "release": "semantic-release"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.3",
+    "semantic-release": "^24.2.9",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^10.0.4",
-    "semantic-release": "^24.2.9"
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/github": "^10.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/release-notes-generator": "^12.1.0"
   }
 }
