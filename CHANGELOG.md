@@ -1,3 +1,20 @@
+# 1.0.0 (2025-11-09)
+
+
+### Features
+
+* add chnglogyml ([ab70e63](https://github.com/allnovice/weather-logger/commit/ab70e6360159d8a68e87434e1df6a1982ed9cb98))
+* add first auto release test ([123fcce](https://github.com/allnovice/weather-logger/commit/123fccee953bf9bc0d5927bbb85acc01e555c6ad))
+* add first auto release test 5th ([857f031](https://github.com/allnovice/weather-logger/commit/857f0310113373dae13d69dfe794316e8f435029))
+* test ([cd1310b](https://github.com/allnovice/weather-logger/commit/cd1310bcd19ede72b92c70573a71ab8e0a3f36be))
+* test auto release ([c4a03b5](https://github.com/allnovice/weather-logger/commit/c4a03b548ef6ec461b276066550d5a9b033f8aa3))
+* test2 ([af4e783](https://github.com/allnovice/weather-logger/commit/af4e783ff81f9842cf69a0ed5faf3bfadb1d4f71))
+* test3 ([b4b25eb](https://github.com/allnovice/weather-logger/commit/b4b25eb9185b84816ec9faf2252b91c19df9d978))
+* test4 ([f62b117](https://github.com/allnovice/weather-logger/commit/f62b1176df4b46d5be6bc93de0caaf870cf2b762))
+* test5 ([116b033](https://github.com/allnovice/weather-logger/commit/116b033c651113f9971656d2c189d198beaeceb8))
+* test6 ([c2af5b9](https://github.com/allnovice/weather-logger/commit/c2af5b90817203d2590c1acaec352eb6929e25a9))
+* ugh ([f0efbda](https://github.com/allnovice/weather-logger/commit/f0efbda39e9debea2de8976ff902db0fb723ef57))
+
 ## 0.0.0 (2025-11-09)
 
 * feat: add chnglogyml ([ab70e63](https://github.com/allnovice/weather-logger/commit/ab70e63))
@@ -51,6 +68,3 @@
 * chore: add pkg name ([2428f72](https://github.com/allnovice/weather-logger/commit/2428f72))
 * chore: add pkg name2 ([0c9a02a](https://github.com/allnovice/weather-logger/commit/0c9a02a))
 * chore: add semantic-release config ([a5f5def](https://github.com/allnovice/weather-logger/commit/a5f5def))
-
-
-
