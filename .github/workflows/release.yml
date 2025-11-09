@@ -9,7 +9,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      # 1️⃣ Checkout the repo with permission to push
+      # 1️⃣ Checkout repo with permission to push
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
@@ -28,10 +28,6 @@ jobs:
 
       # 4️⃣ Run semantic-release (GitHub-only, no npm publish)
       - name: Run semantic-release
-        uses: cycjimmy/semantic-release-action@v4
-        with:
-          branches: main
-          # Disable npm publish by replacing it with a noop plugin
-          extra-plugins: "@semantic-release/npm:@semantic-release/exec"
+        run: npx semantic-release --no-ci --no-npm
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
