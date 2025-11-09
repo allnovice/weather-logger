@@ -9,11 +9,12 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      # 1️⃣ Checkout the repo
+      # 1️⃣ Checkout the repo with permission to push
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # full history needed for semantic-release
+          fetch-depth: 0
+          persist-credentials: true
 
       # 2️⃣ Setup Node
       - name: Set up Node
@@ -25,10 +26,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # 4️⃣ Run semantic-release
+      # 4️⃣ Run semantic-release (GitHub-only, no npm publish)
       - name: Run semantic-release
         uses: cycjimmy/semantic-release-action@v4
         with:
           branches: main
+          # Disable npm publish by replacing it with a noop plugin
+          extra-plugins: "@semantic-release/npm:@semantic-release/exec"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
