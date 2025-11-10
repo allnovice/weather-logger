@@ -16,7 +16,7 @@ conn_str = st.secrets["NEON_CONN"]  # format: 'postgresql+psycopg2://user:pass@h
 engine = create_engine(conn_str)
 
 # Fetch all historical weather logs
-query = "SELECT * FROM weather_logs ORDER BY timestamp_local ASC;"
+query = "SELECT * FROM weather_logs ORDER BY timestamp_local DESC;"
 df = pd.read_sql(query, engine)
 
 if df.empty:
