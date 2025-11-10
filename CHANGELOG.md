@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/allnovice/weather-logger/compare/v1.0.1...v2.0.0) (2025-11-10)
+
+
+### Features
+
+* add lag features ([a259916](https://github.com/allnovice/weather-logger/commit/a259916df896e2fedd3db7dadea4579410e479df))
+
+
+### BREAKING CHANGES
+
+* previous regression API changed to use lag features
+
 ## [1.0.1](https://github.com/allnovice/weather-logger/compare/v1.0.0...v1.0.1) (2025-11-09)
 
 
